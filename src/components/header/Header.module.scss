@@ -1,0 +1,43 @@
+@import './../../assets/styles/colors.scss';
+
+.globalNav {
+    width: 100%;
+    background-color: $header-dark;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    &_content {
+        height: 44px;
+        width: 996px;
+    }
+
+    &_list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+
+        .nav_item {
+            text-decoration: none;
+            color: $hover-text-color;
+            font-size: 12px;
+            transition: 0.8s;
+
+            &:hover {
+                color: $text-color;
+                transition: 0.8s;
+            }
+
+            &.active {
+                color: $active-text-color;
+            }
+
+            svg path {
+                fill: $active-text-color;
+            }
+
+        }
+
+    }
+
+}
