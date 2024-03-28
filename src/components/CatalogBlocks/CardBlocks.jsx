@@ -6,12 +6,11 @@ function CardBlocks(props) {
     return (
         <div className={styles["product_catalog"]}>
             <div className={styles.catalog}>
-                <div className={styles["card_block"]}>
                     <div className={styles['card']}>
                         <div className={styles["card_text"]}>
                             <div className="text">
-                                <p className={styles['block_text_head']}>MacBook Air "15.3"</p>
-                                <p className={styles['block_text_p']}>Amazingly thin and fast.</p>
+                                <p className={styles['card_text_head']}>MacBook Air "15.3"</p>
+                                <p className={styles['card_text_p']}>Amazingly thin and fast.</p>
                             </div>
                         </div>
                         <div className={styles.cardBtnImg}>
@@ -29,20 +28,20 @@ function CardBlocks(props) {
                             </Link>
                         </div>
                     </div>
-                </div>
-                <div className={styles["card_block"]}>
                     <div className={styles['card']}>
                         <div className={styles["card_text"]}>
                             <div className="text">
-                                <p className={styles['block_text_head']}>Pitaka</p>
-                                <p className={styles['block_text_p']}>Discounts on Pitaka cases!</p>
+                                <p className={styles['card_text_head']}>Pitaka</p>
+                                <p className={styles['card_text_p']}>Discounts on Pitaka cases!</p>
                             </div>
                         </div>
                         <div className={styles.cardBtnImg}>
-                            <div className="image">
-                                <img
-                                    src="https://ik.imagekit.io/kvsf72hfx/ProductBlocks/iPhone.png?updatedAt=1711639026562"
-                                    alt=""/>
+                            <div className={styles["card_image"]}>
+                                <div className="image">
+                                    <img
+                                        src="https://ik.imagekit.io/kvsf72hfx/ProductBlocks/iPhone.png?updatedAt=1711639026562"
+                                        alt=""/>
+                                </div>
                             </div>
                             <Link to='/' className={styles['cardBtnImg_btn']}>
                                 Choose
@@ -55,13 +54,11 @@ function CardBlocks(props) {
                             </Link>
                         </div>
                     </div>
-                </div>
-                <div className={styles["card_block"]}>
                     <div className={styles['card']}>
                         <div className={styles["card_text"]}>
                             <div className="text">
-                                <p className={styles['block_text_head']}>AppleWatch Ultra</p>
-                                <p className={styles['block_text_p']}>Adventures await.</p>
+                                <p className={styles['card_text_head']}>AppleWatch Ultra</p>
+                                <p className={styles['card_text_p']}>Adventures await.</p>
                             </div>
                         </div>
                         <div className={styles.cardBtnImg}>
@@ -81,8 +78,6 @@ function CardBlocks(props) {
                             </Link>
                         </div>
                     </div>
-                </div>
-                <div className={styles["card_block"]}>
                     <div className={styles['card']}>
                         <div className={styles["card_text"]}>
                             <div className="text">
@@ -107,8 +102,6 @@ function CardBlocks(props) {
                             </Link>
                         </div>
                     </div>
-                </div>
-                <div className={styles["card_block"]}>
                     <div className={styles['card']}>
                         <div className={styles["card_text"]}>
                             <div className="text">
@@ -133,8 +126,6 @@ function CardBlocks(props) {
                             </Link>
                         </div>
                     </div>
-                </div>
-                <div className={styles["card_block"]}>
                     <div className={styles['card']}>
                         <div className={styles["card_text"]}>
                             <div className="text">
@@ -159,8 +150,6 @@ function CardBlocks(props) {
                             </Link>
                         </div>
                     </div>
-                </div>
-                <div className={styles["card_block"]}>
                     <div className={styles['card']}>
                         <div className={styles["card_text"]}>
                             <div className="text">
@@ -185,7 +174,6 @@ function CardBlocks(props) {
                             </Link>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     );

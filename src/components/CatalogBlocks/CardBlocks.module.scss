@@ -1,6 +1,10 @@
 @import './../../assets/styles/colors.scss';
 @import './../../assets/styles/fonts.scss';
 
+* {
+  box-sizing: border-box;
+}
+
 .product_catalog {
   width: 100%;
   display: flex;
@@ -11,25 +15,23 @@
     margin-top: 20px;
     display: flex;
     gap: 10px;
-    max-width: 1125px !important;
+    max-width: 1440px !important;
     margin-right: auto;
     margin-left: auto;
     flex-wrap: wrap;
 
-    .card_block {
-      margin-top: 10px;
-      width: 365px;
-      height: 225px;
-      background-color: $header-dark-bg;
-
       .card {
-        padding: 24px 16px;
-        text-align: left;
         display: flex;
-        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 10px;
+        width: 470px;
+        height: 219px;
+        background-color: $header-dark-bg;
+        padding: 24px 16px;
 
         &_text {
-          width: 135px;
+          max-width: 41%;
+          width: 100%;
           display: flex;
           flex-wrap: wrap;
           margin: 0;
@@ -69,17 +71,26 @@
           justify-content: right;
           position: relative;
 
+          .card_image {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+          }
+
           &_btn {
             display: flex;
             align-items: center;
             justify-content: center;
             line-height: 12px;
             position: relative;
-            top: 0;
+            top: 5px;
             left: 80px;
             text-decoration: none;
             color: $active-text-color;
-            font-size: 16px;
+            font-size: 18px;
             transition: 1s;
 
             &:hover {
@@ -97,4 +108,3 @@
 
   }
 
-}
