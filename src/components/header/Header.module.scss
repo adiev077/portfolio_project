@@ -1,43 +1,65 @@
 @import './../../assets/styles/colors.scss';
+@import './../../assets/styles/fonts.scss';
 
-.globalNav {
-    width: 100%;
-    background-color: $header-dark;
+.headerBlock {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;
 
-    &_content {
+    .block {
+        width: 100%;
         height: 44px;
-        width: 996px;
+        display: flex;
+        text-align: center;
+
+        & p {
+            margin: 10px auto;
+            font-size: 13px;
+            font-weight: 400;
+            font-family: $font-fam;
+        }
     }
 
-    &_list {
-        list-style-type: none;
+    .globalNav {
+        width: 100%;
+        background-color: $header-dark-bg;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-content: center;
 
-        .nav_item {
-            text-decoration: none;
-            color: $hover-text-color;
-            font-size: 12px;
-            transition: 0.8s;
+        &_content {
+            height: 44px;
+            width: 996px;
+        }
 
-            &:hover {
+        &_list {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+
+            .nav_item {
+                text-decoration: none;
                 color: $text-color;
+                font-size: 12px;
+                font-weight: 400;
+                font-family: $font-fam;
                 transition: 0.8s;
+
+                &:hover {
+                    color: $hover-text-color;
+                    transition: 0.8s;
+                }
+
+                &.active {
+                    color: $active-text-color;
+                }
+
             }
 
-            &.active {
-                color: $active-text-color;
-            }
-
-            svg path {
+            .active svg path{
                 fill: $active-text-color;
             }
 
         }
 
     }
-
 }

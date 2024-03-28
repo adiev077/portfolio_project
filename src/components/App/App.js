@@ -1,5 +1,5 @@
 import React from 'react';
-import {Routes, Route, Navigate, Router, BrowserRouter} from 'react-router-dom';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import HomePage from "../../pages/Home/HomePage";
 import StorePage from "../../pages/Store/StorePage";
 import MacPage from "../../pages/Mac/MacPage";
@@ -15,24 +15,64 @@ import SearchBarPage from "../../pages/SearchBar/SearchBarPage";
 import BasketPage from "../../pages/BasketPage/BasketPage";
 
 function App() {
+
+    const router = createBrowserRouter([
+        {
+            path: "/",
+            element: <HomePage/>,
+        } ,
+        {
+            path: "/store",
+            element: <StorePage/>,
+        },
+        {
+            path: "/mac",
+            element: <MacPage/>,
+        },
+        {
+            path: "/ipad",
+            element: <IPadPage/>,
+        },
+        {
+            path: "/iphone",
+            element: <IPhonePage/>,
+        },
+        {
+            path: "/apple_watch",
+            element: <AppleWatchPage/>,
+        },
+        {
+            path: "/vision",
+            element: <VisionPage/>,
+        },
+        {
+            path: "/airpods",
+            element: <AirPodsPage/>,
+        },
+        {
+            path: "/tv&home",
+            element: <TvHomePage/>,
+        },
+        {
+            path: "/accessories",
+            element: <AccessoriesPage/>,
+        },
+        {
+            path: "/support",
+            element: <SupportPage/>,
+        },
+        {
+            path: "/search",
+            element: <SearchBarPage/>,
+        },
+        {
+            path: "/basket",
+            element: <BasketPage/>,
+        },
+    ]);
+
     return (
-        <BrowserRouter>
-                <Routes>
-                        <Route path={"/"} element={ <HomePage/> } />
-                        <Route path={"/store"} element={<StorePage/>} />
-                        <Route path={"/mac"} element={<MacPage />} />
-                        <Route path={"/ipad"} element={<IPadPage/>} />
-                        <Route path={"/iphone"} element={<IPhonePage />} />
-                        <Route path={"/apple_watch"} element={<AppleWatchPage />} />
-                        <Route path={"/vision"} element={<VisionPage />} />
-                        <Route path={"/airpods"} element={<AirPodsPage />} />
-                        <Route path={"/tv&home"} element={<TvHomePage />} />
-                        <Route path={"/accessories"} element={<AccessoriesPage />} />
-                        <Route path={"/support"} element={<SupportPage />} />
-                        <Route path={"/search"} element={<SearchBarPage />} />
-                        <Route path={"/basket"} element={<BasketPage />} />
-                </Routes>
-        </BrowserRouter>
+        <RouterProvider router={router}/>
     );
 }
 

@@ -1,0 +1,100 @@
+@import './../../assets/styles/colors.scss';
+@import './../../assets/styles/fonts.scss';
+
+.product_catalog {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .catalog {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    max-width: 1125px !important;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+
+    .card_block {
+      margin-top: 10px;
+      width: 365px;
+      height: 225px;
+      background-color: $header-dark-bg;
+
+      .card {
+        padding: 24px 16px;
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+
+        &_text {
+          width: 135px;
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0;
+          text-align: left;
+
+          &_p {
+            margin: 0;
+            height: auto;
+            color: $block-text;
+            font-size: 16px;
+            font-weight: 400;
+            transition: 0.8s;
+
+            &:hover {
+              transition: 0.8s;
+              color: $hover-text-color;
+            }
+
+          }
+
+          &_head {
+            margin: 0;
+            line-height: 24px;
+            color: $block-text-head;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: $block-font-fam;
+          }
+
+        }
+
+        .cardBtnImg {
+          max-width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: right;
+          position: relative;
+
+          &_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 12px;
+            position: relative;
+            top: 0;
+            left: 80px;
+            text-decoration: none;
+            color: $active-text-color;
+            font-size: 16px;
+            transition: 1s;
+
+            &:hover {
+              transition: 1s;
+              text-decoration: underline $active-text-color;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,8 +1,11 @@
 import React from 'react';
+import Header from "../../components/header/Header";
 
 function IPadPage(props) {
     return (
-        <div></div>
+        <div>
+            <Header/>
+        </div>
     );
 }
 
