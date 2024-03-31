@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './ScrollBar.module.scss';
-import {CARD_CATALOG_API} from "../CatalogAPI/CatalogAPI.jsx";
+import {CARD_CATALOG_API} from "../../../components/CatalogAPI/CatalogAPI.jsx";
 
 function ScrollBar(props) {
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from "../../components/header/Header";
-import MySwiper from "../../components/MySwipper/MySwipper";
-import CardBlocks from "../../components/CardBlocks/CardBlocks";
-import ScrollBar from "../../components/ScrollBar/ScrollBar";
+import MySwiper from "./MySwipper/MySwipper";
+import CardBlocks from "./CardBlocks/CardBlocks";
+import ScrollBar from "./ScrollBar/ScrollBar";
 
 function HomePage() {
 

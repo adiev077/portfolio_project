@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './CardBlocks.module.scss';
 import { Link } from "react-router-dom";
-import { BLOCKS_CATALOG_API } from '../CatalogAPI/CatalogAPI.jsx';
+import { BLOCKS_CATALOG_API } from '../../../components/CatalogAPI/CatalogAPI.jsx';
 
 function CardBlocks(props) {
 

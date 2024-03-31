@@ -5,7 +5,7 @@ import {Autoplay, Navigation} from "swiper/modules";
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 import 'swiper/css';
-import {images} from "../CatalogAPI/CatalogAPI.jsx";
+import {images} from "../../../components/CatalogAPI/CatalogAPI.jsx";
 
 
 function MySwiper() {
