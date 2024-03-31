@@ -1,14 +1,29 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import styles from './MySwipper.module.scss'
 import {Autoplay, Navigation} from "swiper/modules";
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 import 'swiper/css';
-import {images} from "../../../components/CatalogAPI/CatalogAPI.jsx";
 
 
 function MySwiper() {
+
+    const [images, setProducts] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('https://demo1755075.mockable.io/images');
+                const data = await response.json();
+                setProducts(data);
+            } catch (error) {
+                console.log("Ошибка!!!!!!");
+            }
+        };
+
+        fetchData();
+    }, []);
 
     return (
         <div className={styles.swiperBlock}>
@@ -25,10 +40,10 @@ function MySwiper() {
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
-            {images.map((image, index) => (
+            {images.map((images, index) => (
                     <SwiperSlide key={index}>
                         <img className={styles.slidesImage}
-                             src={`https://ik.imagekit.io/kvsf72hfx/SwiperSlide/${image}`} alt=""/>
+                             src={`https://ik.imagekit.io/kvsf72hfx/SwiperSlide/${images}`} alt=""/>
                     </SwiperSlide>
                 ))}
             </Swiper>

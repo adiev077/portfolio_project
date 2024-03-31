@@ -1,14 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './ScrollBar.module.scss';
-import {CARD_CATALOG_API} from "../../../components/CatalogAPI/CatalogAPI.jsx";
 
 function ScrollBar(props) {
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('https://demo1755075.mockable.io/cardBlocks');
+                const data = await response.json();
+                setProducts(data);
+            } catch (error) {
+                console.log("Ошибка!!!!!!");
+            }
+        };
+
+        fetchData();
+    }, []);
 
     return (
         <div className={styles.scrollBar}>
             <div className={styles.slider_container}>
                 <div className={styles.slider_container_list}>
-                    {CARD_CATALOG_API.map((product, index) => (
+                    {products.map((product, index) => (
                         <div className={styles.slider_container_list_slide} key={index}>
                             <div className={styles.slider_container_list_slide_card}>
                                 <div className={styles.slider_container_list_slide_card_content}>

@@ -1,9 +1,24 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './CardBlocks.module.scss';
 import { Link } from "react-router-dom";
-import { BLOCKS_CATALOG_API } from '../../../components/CatalogAPI/CatalogAPI.jsx';
 
 function CardBlocks(props) {
+
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('https://demo1755075.mockable.io/catalog');
+                const data = await response.json();
+                setProducts(data);
+            } catch (error) {
+                console.log("Ошибка!!!!!!");
+            }
+        };
+
+        fetchData();
+    }, []);
 
     const svgArrow = (
         <svg width="11" height="14" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +29,7 @@ function CardBlocks(props) {
     return (
         <div className={styles["product_catalog"]}>
             <div className={styles.catalog}>
-                {BLOCKS_CATALOG_API.map((product, index) => (
+                {products.map((product, index) => (
                     <div className={styles['card']} key={index}>
                         <div className={styles["card_text"]}>
                             <div className="text">
