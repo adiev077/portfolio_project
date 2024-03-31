@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from "../../components/header/Header";
 import MySwiper from "../../components/MySwipper/MySwipper";
-import CardBlocks from "../../components/CatalogBlocks/CardBlocks";
+import CardBlocks from "../../components/CardBlocks/CardBlocks";
+import ScrollBar from "../../components/ScrollBar/ScrollBar";
 
 function HomePage() {
 
@@ -10,6 +11,7 @@ function HomePage() {
             <Header/>
             <MySwiper/>
             <CardBlocks/>
+            <ScrollBar/>
         </div>
     );
 }

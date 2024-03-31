@@ -4,6 +4,10 @@
 .headerBlock {
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0;
+    background-color: $header-light-bg;
+    z-index: 999;
 
     .block {
         width: 100%;
@@ -29,15 +33,15 @@
         &_content {
             height: 44px;
             width: 996px;
+            align-content: center;
         }
 
         &_list {
-            list-style-type: none;
             display: flex;
             justify-content: space-between;
+            align-items: center;
 
             .nav_item {
-                text-decoration: none;
                 color: $text-color;
                 font-size: 12px;
                 font-weight: 400;
