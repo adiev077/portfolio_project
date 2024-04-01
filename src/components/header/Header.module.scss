@@ -46,11 +46,11 @@
                 font-size: 12px;
                 font-weight: 400;
                 font-family: $font-fam;
-                transition: 0.8s;
+                transition: 0.5s;
 
                 &:hover {
                     color: $hover-text-color;
-                    transition: 0.8s;
+                    transition: 0.5s;
                 }
 
                 &.active {

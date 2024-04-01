@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Swiper, SwiperSlide} from "swiper/react";
-import styles from './MySwipper.module.scss'
+import styles from './PromoSwipper.module.scss'
 import {Autoplay, Navigation} from "swiper/modules";
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';

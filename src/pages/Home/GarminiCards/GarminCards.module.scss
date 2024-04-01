@@ -99,6 +99,11 @@
           line-height: 12px;
           cursor: pointer;
           color: $active-text-color;
+
+          &:hover {
+            transition: 1s;
+            text-decoration: underline $active-text-color;
+          }
         }
 
       }
@@ -108,3 +113,4 @@
   }
 
 }
+

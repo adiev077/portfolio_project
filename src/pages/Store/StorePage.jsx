@@ -5,6 +5,7 @@ function StorePage(props) {
     return (
         <div>
             <Header/>
+            <h2>LFLFLLFLF</h2>
         </div>
     );
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom'; // Изменение импорта на createHashRouter
 import HomePage from "../../pages/Home/HomePage";
 import StorePage from "../../pages/Store/StorePage";
 import MacPage from "../../pages/Mac/MacPage";
@@ -15,12 +15,11 @@ import SearchBarPage from "../../pages/SearchBar/SearchBarPage";
 import BasketPage from "../../pages/BasketPage/BasketPage";
 
 function App() {
-
-    const router = createBrowserRouter([
+    const router = createHashRouter([ // Создание маршрутизатора с использованием createHashRouter
         {
             path: "/",
             element: <HomePage/>,
-        } ,
+        },
         {
             path: "/store",
             element: <StorePage/>,
@@ -77,3 +76,4 @@ function App() {
 }
 
 export default App;
+
