@@ -1,15 +1,14 @@
 import React, {useEffect, useState} from 'react';
-import styles from './CardBlocks.module.scss';
-import { Link } from "react-router-dom";
+import styles from "./GarminCards.module.scss";
 
-function CardBlocks(props) {
+function GarminCards(props) {
 
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://demo1755075.mockable.io/catalog');
+                const response = await fetch('https://demo1755075.mockable.io/GarminCatalog');
                 const data = await response.json();
                 setProducts(data);
             } catch (error) {
@@ -27,30 +26,31 @@ function CardBlocks(props) {
     );
 
     return (
-        <div className={styles["product_catalog"]}>
-            <div className={styles.catalog}>
-                {products.map((product, index) => (
-                    <div className={styles['card']} key={index}>
-                        <div className={styles["card_text"]}>
-                            <div className="text">
-                                <p className={styles['card_text_head']}>{product.name}</p>
-                                <p className={styles['card_text_p']}>{product.description}</p>
+        <div className={styles['garmin_cards']}>
+            <div className={styles.container}>
+                <div className={styles['garmin_cards_head']}>
+                    <h2 className={styles['garmin_cards_head_title']}>Garmin</h2>
+                    <p className={styles['garmin_cards_head_paragraph']}>MARQ™ COLLECTION</p>
+                    <button className={styles['garmin_cards_head_btn']}>more models{svgArrow}</button>
+                </div>
+                <div className={styles["garmin_card_list"]}>
+                    {products.map((product, index) => (
+                        <div className={styles['list']} key={index}>
+                            <div className={styles['list_card']}>
+                                <h5 className={styles['list_card_text_head']}>{product.name}</h5>
+                                <div className={styles["list_card_block_image"]}>
+                                    <img src={product.image} alt=""/>
+                                </div>
+                                <div className={styles['list_card_block']}>
+                                    <button className={styles['list_card_block_btn']}>Choose{svgArrow}</button>
+                                </div>
                             </div>
                         </div>
-                        <div className={styles.cardBtnImg}>
-                            <div className="image">
-                                <img src={product.image} alt=""/>
-                            </div>
-                            <Link to="/" className={styles['cardBtnImg_btn']}>
-                                Choose
-                                {svgArrow}
-                            </Link>
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     );
 }
 
-export default CardBlocks;
+export default GarminCards;
