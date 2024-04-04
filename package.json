@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://adiev077.github.io/portfolio_project",
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "homepage": "https://adiev077.github.io/portfolio_project",
   "keywords": [],
   "author": "",
   "license": "ISC",
