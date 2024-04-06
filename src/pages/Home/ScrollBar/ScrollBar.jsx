@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './ScrollBar.module.scss';
+import {NavLink} from "react-router-dom";
 
 function ScrollBar(props) {
     const [products, setProducts] = useState([]);
@@ -23,7 +24,7 @@ function ScrollBar(props) {
             <div className={styles.slider_container}>
                 <div className={styles.slider_container_list}>
                     {products.map((product, index) => (
-                        <div className={styles.slider_container_list_slide} key={index}>
+                        <NavLink to={product.link} className={styles.slider_container_list_slide} key={index}>
                             <div className={styles.slider_container_list_slide_card}>
                                 <div className={styles.slider_container_list_slide_card_content}>
                                     <div className={styles.slider_container_list_slide_card_content_text}>
@@ -39,7 +40,7 @@ function ScrollBar(props) {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </NavLink>
                     ))}
                 </div>
             </div>

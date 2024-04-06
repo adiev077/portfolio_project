@@ -9,14 +9,14 @@ import 'swiper/css';
 
 function MySwiper() {
 
-    const [images, setProducts] = useState([]);
+    const [images, setImages] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await fetch('https://demo1755075.mockable.io/images');
                 const data = await response.json();
-                setProducts(data);
+                setImages(data);
             } catch (error) {
                 console.log("Ошибка!!!!!!");
             }

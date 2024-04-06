@@ -13,7 +13,9 @@ function HomePage() {
 
     return (
         <div className={styles.container}>
-            <Header/>
+            <div className={styles.header}>
+                <Header/>
+            </div>
             <PromoSwipper/>
             <CardBlocks/>
             <ScrollBar/>

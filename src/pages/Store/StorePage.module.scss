@@ -5,8 +5,15 @@
   width: 100% !important;
   margin: 0 auto !important;
   overflow-x: hidden;
+  font-family: $font-fam;
 }
 
 .header {
-  background-color: $header-dark-bg;
+  background-color: $dark-0;
+  ul {
+    color: $transparent-text !important;
+  }
+  svg path {
+    fill: $transparent-text !important;
+  }
 }

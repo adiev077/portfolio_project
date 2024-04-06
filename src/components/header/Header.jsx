@@ -35,9 +35,6 @@ function Header(props) {
 
     return (
         <div className={styles.headerBlock}>
-            <div className={styles.block}>
-                <p>The products, services and functions of the operating system are available in this section.</p>
-            </div>
             <nav className={styles.globalNav}>
                 <div className={styles.globalNav_content}>
                     <ul className={styles.globalNav_list}>

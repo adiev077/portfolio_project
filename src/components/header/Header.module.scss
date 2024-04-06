@@ -6,32 +6,19 @@
     flex-direction: column;
     position: sticky;
     top: 0;
-    background-color: $header-light-bg;
+    background-color: transparent;
     z-index: 999;
-
-    .block {
-        width: 100%;
-        height: 44px;
-        display: flex;
-        text-align: center;
-
-        & p {
-            margin: 10px auto;
-            font-size: 13px;
-            font-weight: 400;
-            font-family: $font-fam;
-        }
-    }
 
     .globalNav {
         width: 100%;
-        background-color: $header-dark-bg;
+        background-color: $transparent;
         display: flex;
         justify-content: center;
         align-content: center;
+        color: $text-color;
 
         &_content {
-            height: 44px;
+            height: 54px;
             width: 996px;
             align-content: center;
         }
@@ -42,7 +29,6 @@
             align-items: center;
 
             .nav_item {
-                color: $text-color;
                 font-size: 12px;
                 font-weight: 400;
                 font-family: $font-fam;
