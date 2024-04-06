@@ -1,0 +1,81 @@
+@import './../../../assets/styles/colors.scss';
+@import './../../../assets/styles/fonts.scss';
+
+.parent {
+  margin-top: 50px;
+
+  h1 {
+    width: 1160px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: $dark-2;
+    margin-bottom: 12px;
+  }
+}
+
+.block {
+  max-width: 1200px !important;
+  margin-right: auto;
+  margin-left: auto;
+
+  &_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.block_container_content {
+  text-align: center;
+  display: flex;
+  flex-direction: column!important;
+  padding: 1.5rem!important;
+
+  &_in_img {
+    width: auto;
+    max-height: 270px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  &_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    &_paragraph {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 120%;
+      text-align: center;
+      color: $dark-1;
+    }
+
+    &_link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 35px;
+      margin-top: 15px;
+
+      & span {
+        border-radius: 20px;
+        text-align: center;
+        background: $mac-cards-color;
+        color: $header-light-bg;
+        padding: 5px 11px;
+        display: flex;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+      }
+
+    }
+
+  }
+
+}

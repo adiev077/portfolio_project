@@ -12,7 +12,7 @@ import TvHomePage from "../../pages/TvHome/TvHomePage";
 import AccessoriesPage from "../../pages/Accessories/AccessoriesPage";
 import SupportPage from "../../pages/Support/SupportPage";
 import SearchBarPage from "../../pages/SearchBar/SearchBarPage";
-import BasketPage from "../../pages/BasketPage/BasketPage";
+import CartPage from "../../pages/CartPage/CartPage";
 
 function App() {
     const router = createHashRouter([ // Создание маршрутизатора с использованием createHashRouter
@@ -65,8 +65,8 @@ function App() {
             element: <SearchBarPage/>,
         },
         {
-            path: "/basket",
-            element: <BasketPage/>,
+            path: "/cart",
+            element: <CartPage/>,
         },
     ]);
 

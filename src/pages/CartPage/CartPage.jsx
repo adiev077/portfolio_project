@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "../../components/header/Header";
 
-function BasketPage(props) {
+function CartPage(props) {
     return (
         <div>
             <Header/>
@@ -9,4 +9,4 @@ function BasketPage(props) {
     );
 }
 
-export default BasketPage;
+export default CartPage;
