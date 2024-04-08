@@ -4,7 +4,6 @@ import styles from './IphoneCards.module.scss'
 function IphoneCards(props) {
 
     const [products, setProducts] = useState([]);
-
     useEffect(() => {
         const fetchData = async () => {
             try {

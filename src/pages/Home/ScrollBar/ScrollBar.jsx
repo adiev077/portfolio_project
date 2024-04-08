@@ -3,6 +3,7 @@ import styles from './ScrollBar.module.scss';
 import {NavLink} from "react-router-dom";
 
 function ScrollBar(props) {
+
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -36,7 +37,7 @@ function ScrollBar(props) {
                                         </p>
                                     </div>
                                     <div className={styles.slider_container_list_slide_card_content_bg}>
-                                        <img src={product.image} alt={product.name} />
+                                        <img src={product.image} alt={product.name}/>
                                     </div>
                                 </div>
                             </div>

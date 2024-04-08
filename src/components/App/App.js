@@ -13,9 +13,10 @@ import AccessoriesPage from "../../pages/Accessories/AccessoriesPage";
 import SupportPage from "../../pages/Support/SupportPage";
 import SearchBarPage from "../../pages/SearchBar/SearchBarPage";
 import CartPage from "../../pages/CartPage/CartPage";
+import IphoneDetail from "../IPhoneList/iphoneDetail/IphoneDetail";
 
 function App() {
-    const router = createHashRouter([ // Создание маршрутизатора с использованием createHashRouter
+    const router = createHashRouter([
         {
             path: "/",
             element: <HomePage/>,
@@ -35,6 +36,10 @@ function App() {
         {
             path: "/iphone",
             element: <IPhonePage/>,
+        },
+        {
+            path: "/iphone/:id",
+            element: <IphoneDetail/>,
         },
         {
             path: "/apple_watch",
