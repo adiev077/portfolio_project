@@ -8,7 +8,6 @@ import { Navigation } from "swiper/modules";
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 import 'swiper/css';
-import clsx from "clsx";
 
 function IphoneDetail() {
     const [detail, setDetail] = useState([])
@@ -104,10 +103,11 @@ function IphoneDetail() {
         </svg>
     )
 
-
     return (
         <div className={styles.detail}>
-            <Header/>
+            <div className={styles.header}>
+                <Header/>
+            </div>
             {selectedProduct && (
                 <div className={styles.product}>
                     <div className={styles['iphone_wrapper']}>

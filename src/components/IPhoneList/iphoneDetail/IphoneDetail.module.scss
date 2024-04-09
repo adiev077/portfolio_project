@@ -8,6 +8,10 @@
   display: block;
 }
 
+.header {
+  background-color: $header-dark-bg;
+}
+
 .product {
   margin-top: 60px;
   max-width: 1200px !important;

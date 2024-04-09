@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import styles from './IphoneCards.module.scss'
+import {NavLink} from "react-router-dom";
 
 function IphoneCards(props) {
 
@@ -36,7 +37,7 @@ function IphoneCards(props) {
                 </div>
                 <div className={styles["iphone_cards_list"]}>
                         {products.map((product, index) => (
-                            <div className={styles['card']} key={index}>
+                            <NavLink to={`/iphone/${product.id}`} className={styles['card']} key={index}>
                                 <div className={styles["card_text"]}>
                                     <div className={styles["card_text"]}>
                                         <h4 className={styles['card_text_head']}>{product.name}</h4>
@@ -46,7 +47,7 @@ function IphoneCards(props) {
                                     <div className={styles["card_block_image"]}>
                                         <img src={product.image} alt=""/>
                                     </div>
-                            </div>
+                            </NavLink>
                         ))}
                 </div>
             </div>
