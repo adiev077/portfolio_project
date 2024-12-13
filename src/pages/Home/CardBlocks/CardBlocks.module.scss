@@ -50,7 +50,6 @@
             font-weight: 600;
             font-family: $block-font-fam;
           }
-
         }
 
         .cardBtnImg {
@@ -67,7 +66,16 @@
             flex-direction: column;
             justify-content: center;
             position: relative;
-            width: 100%;
+            width: 246px; /* Вы можете установить нужную ширину */
+            height: 150px; /* Это позволит изображениям масштабироваться пропорционально */
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            img {
+              width: 100%; /* Это заставит изображение растягиваться по ширине контейнера */
+              height: 100%;
+              object-fit: contain;
+            }
           }
 
           &_btn {

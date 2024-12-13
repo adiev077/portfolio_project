@@ -16,13 +16,15 @@ function HomePage() {
             <div className={styles.header}>
                 <Header/>
             </div>
-            <PromoSwipper/>
-            <CardBlocks/>
-            <ScrollBar/>
-            <IphoneCards/>
-            <GarminCards/>
-            <MacCards/>
-            <Footer/>
+            <div style={{ paddingTop: 54}}>
+                <PromoSwipper/>
+                <CardBlocks/>
+                <ScrollBar/>
+                <IphoneCards/>
+                <GarminCards/>
+                <MacCards/>
+                <Footer/>
+            </div>
         </div>
     );
 }

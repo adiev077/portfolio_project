@@ -1,0 +1,318 @@
+{
+  "iPhones": [
+    {
+      "id": 1,
+      "name": "iPhone 16 Pro Max",
+      "image": "/images/16promax.webp",
+      "price": {
+        "256GB": {
+          "som": "149 999 сом",
+          "usd": "1699 USD"
+        },
+        "512GB": {
+          "som": "169 999 сом",
+          "usd": "1899 USD"
+        },
+        "1TB": {
+          "som": "189 999 сом",
+          "usd": "2099 USD"
+        }
+      },
+      "colors": {
+        "Titanium Black": "/images/16-pro.webp",
+        "Titanium White": "/images/16-pro.webp",
+        "Titanium Blue": "/images/16-pro.webp",
+        "Natural Titanium": "/images/16-pro.webp"
+      },
+      "description": "iPhone 16 Pro Max — это мощный смартфон с самым производительным чипом A18 Pro, камерой на 48 МП и прочным титановым корпусом."
+    },
+    {
+      "id": 2,
+      "name": "iPhone 16 Pro",
+      "image": "/images/16-pro.webp",
+      "price": {
+        "256GB": {
+          "som": "139 999 сом",
+          "usd": "1499 USD"
+        },
+        "512GB": {
+          "som": "159 999 сом",
+          "usd": "1699 USD"
+        },
+        "1TB": {
+          "som": "179 999 сом",
+          "usd": "1899 USD"
+        }
+      },
+      "colors": {
+        "Titanium Black": "/images/16-pro.webp",
+        "Titanium White": "/images/16-pro.webp",
+        "Titanium Blue": "/images/16-pro.webp",
+        "Natural Titanium": "/images/16-pro.webp"
+      },
+      "description": "Самый прочный и лёгкий iPhone. Камера Pro, которая открывает новые горизонты мобильной фотографии."
+    },
+    {
+      "id": 3,
+      "name": "iPhone 16 Plus",
+      "image": "/images/16plus.webp",
+      "price": {
+        "128GB": {
+          "som": "99 999 сом",
+          "usd": "1099 USD"
+        },
+        "256GB": {
+          "som": "109 999 сом",
+          "usd": "1199 USD"
+        },
+        "512GB": {
+          "som": "129 999 сом",
+          "usd": "1399 USD"
+        }
+      },
+      "colors": {
+        "Titanium Black": "/images/16-pro.webp",
+        "Purple": "/images/16-pro.webp",
+        "Midnight": "/images/16-pro.webp",
+        "Starlight": "https://example.com/images/iphone14plus_starlight.jpg",
+        "Product Red": "https://example.com/images/iphone14plus_red.jpg"
+      },
+      "description": "iPhone 14 Plus имеет большой 6,7-дюймовый экран Super Retina XDR и выдающуюся автономность благодаря батарее, рассчитанной на весь день. Включает функции Crash Detection и Emergency SOS через спутник."
+    },
+    {
+      "id": 4,
+      "name": "iPhone 16",
+      "image": "/images/iphone16.webp",
+      "price": {
+        "256GB": {
+          "som": "114 999 сом",
+          "usd": "1299 USD"
+        },
+        "512GB": {
+          "som": "134 999 сом",
+          "usd": "1499 USD"
+        },
+        "1TB": {
+          "som": "154 999 сом",
+          "usd": "1699 USD"
+        }
+      },
+      "colors": {
+        "Titanium Black": "/images/16-pro.webp",
+        "Gold": "/images/16-pro.webp",
+        "Silver": "https://example.com/images/iphone13pro_silver.jpg",
+        "Sierra Blue": "https://example.com/images/iphone13pro_sierra_blue.jpg"
+      },
+      "description": "iPhone 13 Pro Max с чипом A15 Bionic и Pro-камерой для потрясающих фото и видео."
+    },
+    {
+      "id": 5,
+      "name": "iPhone 15 Pro Max",
+      "image": "/images/iphone-15-pro-finish-select-202309-6-7inch-bluetitanium.webp",
+      "price": {
+        "256GB": {
+          "som": "114 999 сом",
+          "usd": "1299 USD"
+        },
+        "512GB": {
+          "som": "134 999 сом",
+          "usd": "1499 USD"
+        },
+        "1TB": {
+          "som": "154 999 сом",
+          "usd": "1699 USD"
+        }
+      },
+      "colors": {
+        "Titanium Black": "/images/16-pro.webp",
+        "Gold": "/images/16-pro.webp",
+        "Silver": "https://example.com/images/iphone13pro_silver.jpg",
+        "Sierra Blue": "https://example.com/images/iphone13pro_sierra_blue.jpg"
+      },
+      "description": "iPhone 13 Pro Max с чипом A15 Bionic и Pro-камерой для потрясающих фото и видео."
+    },
+    {
+      "id": 6,
+      "name": "iPhone 15 Pro",
+      "image": "/images/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium.webp",
+      "price": {
+        "256GB": {
+          "som": "114 999 сом",
+          "usd": "1299 USD"
+        },
+        "512GB": {
+          "som": "134 999 сом",
+          "usd": "1499 USD"
+        },
+        "1TB": {
+          "som": "154 999 сом",
+          "usd": "1699 USD"
+        }
+      },
+      "colors": {
+        "Titanium Black": "/images/16-pro.webp",
+        "Gold": "/images/16-pro.webp",
+        "Silver": "https://example.com/images/iphone13pro_silver.jpg",
+        "Sierra Blue": "https://example.com/images/iphone13pro_sierra_blue.jpg"
+      },
+      "description": "iPhone 13 Pro Max с чипом A15 Bionic и Pro-камерой для потрясающих фото и видео."
+    },
+    {
+      "id": 7,
+      "name": "iPhone 15 Plus",
+      "image": "/images/iphone-15-finish-select-202309-6-7inch-pink_tOmzDmN.webp",
+      "price": {
+        "256GB": {
+          "som": "114 999 сом",
+          "usd": "1299 USD"
+        },
+        "512GB": {
+          "som": "134 999 сом",
+          "usd": "1499 USD"
+        },
+        "1TB": {
+          "som": "154 999 сом",
+          "usd": "1699 USD"
+        }
+      },
+      "colors": {
+        "Titanium Black": "/images/16-pro.webp",
+        "Gold": "/images/16-pro.webp",
+        "Silver": "https://example.com/images/iphone13pro_silver.jpg",
+        "Sierra Blue": "https://example.com/images/iphone13pro_sierra_blue.jpg"
+      },
+      "description": "iPhone 13 Pro Max с чипом A15 Bionic и Pro-камерой для потрясающих фото и видео."
+    },
+    {
+      "id": 8,
+      "name": "iPhone 15",
+      "image": "/images/iphone-15-finish-select-202309-6-1inch-blue_pVO8KVP.webp",
+      "price": {
+        "256GB": {
+          "som": "114 999 сом",
+          "usd": "1299 USD"
+        },
+        "512GB": {
+          "som": "134 999 сом",
+          "usd": "1499 USD"
+        },
+        "1TB": {
+          "som": "154 999 сом",
+          "usd": "1699 USD"
+        }
+      },
+      "colors": {
+        "Titanium Black": "/images/16-pro.webp",
+        "Gold": "/images/16-pro.webp",
+        "Silver": "https://example.com/images/iphone13pro_silver.jpg",
+        "Sierra Blue": "https://example.com/images/iphone13pro_sierra_blue.jpg"
+      },
+      "description": "iPhone 13 Pro Max с чипом A15 Bionic и Pro-камерой для потрясающих фото и видео."
+    },
+    {
+      "id": 9,
+      "name": "iPhone 14 Plus",
+      "image": "/images/16-pro.webp",
+      "price": {
+        "256GB": {
+          "som": "114 999 сом",
+          "usd": "1299 USD"
+        },
+        "512GB": {
+          "som": "134 999 сом",
+          "usd": "1499 USD"
+        },
+        "1TB": {
+          "som": "154 999 сом",
+          "usd": "1699 USD"
+        }
+      },
+      "colors": {
+        "Titanium Black": "/images/16-pro.webp",
+        "Gold": "/images/16-pro.webp",
+        "Silver": "https://example.com/images/iphone13pro_silver.jpg",
+        "Sierra Blue": "https://example.com/images/iphone13pro_sierra_blue.jpg"
+      },
+      "description": "iPhone 13 Pro Max с чипом A15 Bionic и Pro-камерой для потрясающих фото и видео."
+    },
+    {
+      "id": 10,
+      "name": "iPhone 14",
+      "image": "/images/16plus.webp",
+      "price": {
+        "256GB": {
+          "som": "114 999 сом",
+          "usd": "1299 USD"
+        },
+        "512GB": {
+          "som": "134 999 сом",
+          "usd": "1499 USD"
+        },
+        "1TB": {
+          "som": "154 999 сом",
+          "usd": "1699 USD"
+        }
+      },
+      "colors": {
+        "Titanium Black": "/images/iphone-14-finish-select-202209-6-1inch-yellow.webp",
+        "Gold": "/images/16-pro.webp",
+        "Silver": "https://example.com/images/iphone13pro_silver.jpg",
+        "Sierra Blue": "https://example.com/images/iphone13pro_sierra_blue.jpg"
+      },
+      "description": "iPhone 13 Pro Max с чипом A15 Bionic и Pro-камерой для потрясающих фото и видео."
+    },
+    {
+      "id": 11,
+      "name": "iPhone 14",
+      "image": "/images/iphone16.webp",
+      "price": {
+        "256GB": {
+          "som": "114 999 сом",
+          "usd": "1299 USD"
+        },
+        "512GB": {
+          "som": "134 999 сом",
+          "usd": "1499 USD"
+        },
+        "1TB": {
+          "som": "154 999 сом",
+          "usd": "1699 USD"
+        }
+      },
+      "colors": {
+        "Titanium Black": "/images/iphone-14-finish-select-202209-6-1inch-yellow.webp",
+        "Gold": "/images/16-pro.webp",
+        "Silver": "https://example.com/images/iphone13pro_silver.jpg",
+        "Sierra Blue": "https://example.com/images/iphone13pro_sierra_blue.jpg"
+      },
+      "description": "iPhone 13 Pro Max с чипом A15 Bionic и Pro-камерой для потрясающих фото и видео."
+    },
+    {
+      "id": 12,
+      "name": "iPhone 14",
+      "image": "/images/iphone-15-finish-select-202309-6-1inch-blue_pVO8KVP.webp",
+      "price": {
+        "256GB": {
+          "som": "114 999 сом",
+          "usd": "1299 USD"
+        },
+        "512GB": {
+          "som": "134 999 сом",
+          "usd": "1499 USD"
+        },
+        "1TB": {
+          "som": "154 999 сом",
+          "usd": "1699 USD"
+        }
+      },
+      "colors": {
+        "Titanium Black": "/images/iphone-14-finish-select-202209-6-1inch-yellow.webp",
+        "Gold": "/images/16-pro.webp",
+        "Silver": "https://example.com/images/iphone13pro_silver.jpg",
+        "Sierra Blue": "https://example.com/images/iphone13pro_sierra_blue.jpg"
+      },
+      "description": "iPhone 13 Pro Max с чипом A15 Bionic и Pro-камерой для потрясающих фото и видео."
+    }
+  ],
+  "name": ""
+}

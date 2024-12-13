@@ -1,23 +1,18 @@
 import React, {useEffect, useState} from 'react';
 import styles from './MacCards.module.scss';
+import image1 from "../../../assets/images/ipadprom2_vq1Wna2.webp";
+import image2 from "../../../assets/images/Шаблон_5_m4SVn65.webp";
+import image3 from "../../../assets/images/istorecard_HR5kwV0.webp";
+import image4 from "../../../assets/images/airpodspro_RELgGXl.webp";
 
 function MacCards(props) {
 
-    const [products, setProducts] = useState([]);
-
-    useEffect( () => {
-
-        const fetchData = async () => {
-            try {
-                const response = await fetch('https://demo1755075.mockable.io/MacCards');
-                const data = await response.json();
-                setProducts(data);
-            } catch (error) {
-                console.log("Ошибка!!!!!!");
-            }
-        }
-        fetchData();
-    }, [])
+    const [data, setData] = useState([
+        { image: image1, id: 1, name: 'iPad Pro', description: 'Superpower of the M2 chip' },
+        { image: image2, id: 2, name: 'MacBook Air', description: 'Impressive. Thin. Powerful.' },
+        { image: image3, id: 3, name: 'iStore Card', description: 'Get up to 2% cashback on every purchase.' },
+        { image: image4, id: 4, name: 'AirPods Pro', description: 'Adaptive sound.' },
+    ]);
 
     const svgArrow = (
         <svg width="11" height="14" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +29,7 @@ function MacCards(props) {
                     <button className={styles['mac_cards_container_head_btn']}>more detailed{svgArrow}</button>
                 </div>
                 <div className={styles['mac_cards_container_list']}>
-                    {products.map((product, index) => (
+                    {data.map((product, index) => (
                         <div key={index} className={`${styles['mac_cards_container_list_wrap']} ${index === 1 ? styles['mac_cards_container_list_wrap_second'] : ''} ${index === 2 ? styles['mac_cards_container_list_wrap_third'] : ''}`}>
                             <div className={styles['mac_cards_container_list_wrap_title']}>
                                 <h2 className={styles['mac_cards_container_list_wrap_title_head']}>

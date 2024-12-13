@@ -1,23 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import styles from "./GarminCards.module.scss";
+import image1 from "../../../assets/images/commander-carbon-1.webp";
+import image2 from "../../../assets/images/commander-carbon-1.webp";
+import image3 from "../../../assets/images/commander-carbon-1.webp";
 
 function GarminCards(props) {
 
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('https://demo1755075.mockable.io/GarminCatalog');
-                const data = await response.json();
-                setProducts(data);
-            } catch (error) {
-                console.log("Ошибка!!!!!!");
-            }
-        };
-
-        fetchData();
-    }, []);
+    const [data, setData] = useState([
+        { image: image1, id: 1, name: 'MARQ® Commander (Gen 2) - Carbon Edition',},
+        { image: image2, id: 2, name: 'MARQ® Commander (Gen 2) - Carbon Edition', },
+        { image: image3, id: 3, name: 'MARQ® Commander (Gen 2) - Carbon Edition',},
+    ]);
 
     const svgArrow = (
         <svg width="11" height="14" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +27,7 @@ function GarminCards(props) {
                     <button className={styles['garmin_cards_head_btn']}>more models{svgArrow}</button>
                 </div>
                 <div className={styles["garmin_card_list"]}>
-                    {products.map((product, index) => (
+                    {data.map((product, index) => (
                         <div className={styles['list']} key={index}>
                             <div className={styles['list_card']}>
                                 <h5 className={styles['list_card_text_head']}>{product.name}</h5>

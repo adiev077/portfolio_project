@@ -1,23 +1,27 @@
 import React, {useEffect, useState} from 'react';
 import styles from './IphoneCards.module.scss'
 import {NavLink} from "react-router-dom";
+import image1 from "../../../assets/images/16promax.webp";
+import image2 from "../../../assets/images/16-pro.webp";
+import image3 from "../../../assets/images/16plus.webp";
+import image4 from "../../../assets/images/iphone16.webp";
+import image5 from "../../../assets/images/iphone-15-pro-finish-select-202309-6-7inch-bluetitanium.webp";
+import image6 from "../../../assets/images/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium.webp";
+import image7 from "../../../assets/images/iphone-15-finish-select-202309-6-7inch-pink_tOmzDmN.webp";
+import image8 from "../../../assets/images/iphone-15-finish-select-202309-6-1inch-blue_pVO8KVP.webp";
 
 function IphoneCards(props) {
 
-    const [products, setProducts] = useState([]);
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('https://demo1755075.mockable.io/iPhoneCatalog');
-                const data = await response.json();
-                setProducts(data);
-            } catch (error) {
-                console.log("Ошибка!!!!!!");
-            }
-        };
-
-        fetchData();
-    }, []);
+    const [data, setData] = useState([
+        { image: image1, id: 1, name: 'iPhone 16 Pro Max',},
+        { image: image2, id: 2, name: 'iPhone 16 Pro', },
+        { image: image3, id: 3, name: 'iPhone 16 Plus',},
+        { image: image4, id: 4, name: 'iPhone 16',},
+        { image: image5, id: 5, name: 'iPhone 15 Pro Max',},
+        { image: image6, id: 6, name: 'iPhone 15 Pro',},
+        { image: image7, id: 7, name: 'iPhone 15 Plus',},
+        { image: image8, id: 8, name: 'iPhone 15',},
+    ]);
 
     const svgArrow = (
         <svg width="11" height="14" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +40,7 @@ function IphoneCards(props) {
                     <button className={styles['iphone_cards_head_btn']}>more models{svgArrow}</button>
                 </div>
                 <div className={styles["iphone_cards_list"]}>
-                        {products.map((product, index) => (
+                        {data.map((product, index) => (
                             <NavLink to={`/iphone/${product.id}`} className={styles['card']} key={index}>
                                 <div className={styles["card_text"]}>
                                     <div className={styles["card_text"]}>

@@ -10,8 +10,10 @@ function IPhonePage(props) {
             <div className={styles.header}>
                 <Header/>
             </div>
-            <IPhoneCards/>
-            <Footer/>
+            <div style={{ paddingTop: 54}}>
+                <IPhoneCards/>
+                <Footer/>
+            </div>
         </div>
     );
 }

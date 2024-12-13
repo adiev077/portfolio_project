@@ -1,24 +1,23 @@
 import React, {useEffect, useState} from 'react';
 import styles from './CardBlocks.module.scss';
 import { Link } from "react-router-dom";
+import image1 from "./../../../assets/images/iMac.webp";
+import image2 from "./../../../assets/images/vision.webp";
+import image3 from "./../../../assets/images/ultra-2_UMdKMAi.webp";
+import image4 from "./../../../assets/images/apple-tv-4k-2022_ABsQgkR.webp";
+import image5 from "./../../../assets/images/homepod-select-midnight-202210.webp";
+import image6 from "./../../../assets/images/airtag-key_UydLkmV_DFLucfg.webp";
 
 function CardBlocks(props) {
 
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('https://demo1755075.mockable.io/catalog');
-                const data = await response.json();
-                setProducts(data);
-            } catch (error) {
-                console.log("Ошибка!!!!!!");
-            }
-        };
-
-        fetchData();
-    }, []);
+    const [data, setData] = useState([
+        { image: image1, id: 1, name: 'iMac', description: 'A powerful monoblock, now on an M3 chip.' },
+        { image: image2, id: 2, name: 'Vision Pro', description: 'Taste the future.' },
+        { image: image3, id: 3, name: 'Watch Ultra 2', description: 'Adventure awaits.' },
+        { image: image4, id: 4, name: 'Apple TV 4K', description: 'Cinematic in every sense.' },
+        { image: image5, id: 5, name: 'HomePod', description: 'Deep sound.' },
+        { image: image6, id: 6, name: 'AirTag', description: 'Resourceful things.' },
+    ]);
 
     const svgArrow = (
         <svg width="11" height="14" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +28,7 @@ function CardBlocks(props) {
     return (
         <div className={styles["product_catalog"]}>
             <div className={styles.catalog}>
-                {products.map((product, index) => (
+                {data.map((product, index) => (
                     <div className={styles['card']} key={index}>
                         <div className={styles["card_text"]}>
                             <div className="text">
@@ -38,7 +37,7 @@ function CardBlocks(props) {
                             </div>
                         </div>
                         <div className={styles.cardBtnImg}>
-                            <div className="image">
+                            <div className={styles['card_image']}>
                                 <img src={product.image} alt=""/>
                             </div>
                             <Link to="/" className={styles['cardBtnImg_btn']}>

@@ -9,11 +9,12 @@
 }
 
 .header {
-  background-color: $dark-0;
+  background-color: $dark-0 !important;
+  height: 54px;
   ul {
     color: $transparent-text !important;
   }
   svg path {
-    fill: $transparent-text !important;
+    fill: #333333 !important;
   }
 }

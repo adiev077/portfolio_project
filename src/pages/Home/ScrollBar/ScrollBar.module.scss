@@ -7,7 +7,9 @@
 
   .slider_container {
     padding-top: 70px;
-    width: 1440px;
+    margin-right: 70px;
+    padding-bottom: 70px;
+    width: 100%;
     overflow-x: scroll;
 
     &::-webkit-scrollbar {
@@ -19,18 +21,24 @@
       gap: 20px;
 
       &_slide {
-        height: 500px;
-        width: 420px;
+        height: 680px;
+        width: 375px;
 
         &_card {
           margin-right: 20px;
-          transform: translateX(calc(max(1024px, 100vw)/2 - 490px));
+          transform: translateX(calc(max(1024px, 100vw)/2 - 700px));
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: translateX(calc(max(1024px, 100vw)/2 - 700px)) scale(1.05);
+            transition: transform 0.3s ease;
+          }
 
           &_content {
             border-radius: 18px;
             box-shadow: 2px 4px 7px #00000014;
-            height: 500px;
-            min-width: 400px;
+            height: 680px;
+            min-width: 375px;
             overflow: hidden;
             transition: all .3s cubic-bezier(0,0,.5,1);
 
@@ -55,7 +63,6 @@
                 padding-top: 24px;
                 font-family: $font-fam;
               }
-
             }
 
             &_bg {
@@ -68,7 +75,6 @@
                 width: 100%;
                 object-fit: cover;
               }
-
             }
 
           }

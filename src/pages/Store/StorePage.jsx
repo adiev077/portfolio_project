@@ -9,9 +9,9 @@ import ScrollBar from "../Home/ScrollBar/ScrollBar";
 function StorePage(props) {
     return (
         <div className={styles.container}>
-            <div className={styles.header}>
+            <header className={styles.header}>
                 <Header/>
-            </div>
+            </header>
             <PromoBlock/>
             <MacSwipper/>
             <ScrollBar/>

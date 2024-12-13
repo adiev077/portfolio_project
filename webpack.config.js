@@ -27,12 +27,13 @@ module.exports = {
                 },
             },
             {
-                test: /\.(png|jpe?g|gif)$/i,
+                test: /\.(png|jpe?g|gif|webp)$/i, // Добавлен webp
                 use: [
                     {
                         loader: 'file-loader',
                         options: {
                             outputPath: 'images',
+                            name: '[name].[ext]', // Убедимся, что имена файлов сохраняются
                         },
                     },
                 ],

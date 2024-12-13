@@ -8,23 +8,16 @@ import { Navigation } from "swiper/modules";
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 import 'swiper/css';
+import iPhoneData from "../../../api/api.json";
 
 function IphoneDetail() {
+        console.log("hello wooddoldkdldkdldkd")
     const [detail, setDetail] = useState([])
     const { id } = useParams();
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('https://demo1755075.mockable.io/iPhonePage');
-                const data = await response.json();
-                setDetail(data);
-            } catch (error) {
-                console.log("Ошибка!!!!!!");
-            }
-        }
-        fetchData();
-    }, [])
+        setDetail(iPhoneData.iPhones);
+    }, []);
 
     const selectedProduct = detail.find(product => product.id === parseInt(id));
 
